@@ -1,0 +1,394 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+font-family: "LuciferSansMedium", Arial, sans-serif;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+
+
+
+@font-face {
+    font-family: "LuciferSansCondenced";
+    src: url("../src/fonts/LuciferSansCondensedRegular.otf"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+@font-face {
+    font-family: "LuciferSansSemiCondenced";
+    src: url("../src/fonts/LuciferSansSemiCndMedium.otf"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+@font-face {
+    font-family: "LuciferSansSemiCondencedBold";
+    src: url("../src/fonts/LuciferSansSemiCndBold.otf"); 
+    font-style: normal; 
+    font-weight: bold; 
+} 
+
+@font-face {
+    font-family: "LuciferSansRegular";
+    src: url("../src/fonts/LuciferSansRegular.otf"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+@font-face {
+    font-family: "Canopee";
+    src: url("../src/fonts/Canopee.otf"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: "LuciferSansBlack";
+    src: url("../src/fonts/LuciferSansBlack.otf"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+@font-face {
+    font-family: "LuciferSansThin";
+    src: url("../src/fonts/LuciferSansThin.otf"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+@font-face {
+    font-family: "LuciferSansMedium";
+    src: url("../src/fonts/LuciferSansMedium.otf"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.wrapper{
+    max-width: 1870px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 110px 1466px 1198px 758px 1312px 910px 1070px 440px 1080px;
+}
+
+.header-container__menu-list {
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+}
+
+.menu-list__list-item {
+    font-size: 21px;
+    line-height: 110px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.images-item {
+    margin-top: 50px;
+}
+
+.images-item__image-container {
+    width: 48px;
+    height: 3px;
+}
+
+.image-container1 {
+    margin-bottom: 1px;
+}
+
+.item-image {
+    vertical-align: top;
+}
+
+.item-link__star {
+    margin-top: 35px;
+}
+
+.number1 {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+}
+
+.wrapper-main__nav {
+    display: grid;
+    grid-template-rows: 490px 490px 490px;
+}
+
+.nav__nav-item {
+    width: 180px;
+    height: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+    transform: rotate(-90deg);
+    margin-left: -62px;
+}
+
+.nav-item__text-content {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0.3px 0.3px 0 #000000, -0.3px -0.3px 0 #000000, -0.3px 0.3px 0 #000000, 0.3px -0.3px 0 #000000;
+}
+
+.nav-item1 {
+    margin-top: 110px;
+    margin-bottom: 200px;
+}
+
+
+.nav-item__shape-container {
+    width: 12px;
+    height: 11px;
+    transform: rotate(-270deg);
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.wrapper-main__first-row-container {
+    position: relative;
+    display: flex;
+    margin-top: 80px;
+}
+
+.first-row-container__small-window-container {
+    position: relative;
+    font-family: "LuciferSansSemiCondenced";
+    width: 468px;
+    height: 261px;
+    border: 1px solid #000000;
+    display: flex;
+    background-color: #F7F7F7;
+}
+
+.first-row-container__middle-image-container {
+    position: relative;
+}
+
+.first-row-container__middle-image-container::after {
+    content: url(../src/images/WhiteLine.png);
+    display: block;
+    position: absolute;
+    bottom: 92px;
+    left: 50px;
+}
+
+
+
+.small-window-container__image-container {
+    padding: 25px;
+}
+
+.small-window-container__text-container {
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.small-window-container__arrow-container {
+    position: absolute;
+    left: 420px;
+    width: 36px;
+    height: 31px;
+}
+
+.small-window-arrow {
+    margin-right: 25px;
+}
+
+.arrow-link {
+    display: block;
+}
+
+
+.text-container__upper-layer {
+    width: 160px;
+    font-size: 15px;
+    line-height: 21px;
+    color: #B0B0B0;
+    margin-bottom: 110px;
+
+}
+
+.text-container__down-layer {
+    width: 225px;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.first-row-image {
+    position: relative;
+}
+
+.first-row-container__middle-image-container {
+    position: relative;
+    margin-top: 230px;
+    margin-left: -100px;
+    z-index: 1;
+}
+
+.first-row-container__right-image-container {
+    margin-left: -220px;
+    z-index: 0;
+    margin-top: -82px;
+}
+
+.first-row-container__small-window-container {
+    position: absolute;
+    top: 960px;
+    left: 285px;
+    z-index: 2;
+}
+
+.first-row-container__authors-container {
+    position: absolute;
+    top: 1192px;
+    font-family: "LuciferSansSemiCondenced";
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.first-row {
+    color: #000000;
+}
+
+.second-row {
+    color: #B0B0B0;
+    margin-bottom: 25px;
+}
+
+.first-row-container__massimodutti-container {
+    position: relative;
+    font-family: "LuciferSansSemiCondenced";
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -20px;
+    margin-left: 632px;
+}
+
+
+.first-row-container__massimodutti-container::before {
+    content: url(../src/images/BlackLine.png);
+    margin-bottom: 55px;
+    position: absolute;
+    top: -75px;
+}
+
+.first-row-container__upper-title-container {
+    position: absolute;
+    display: flex;
+    width: 863px;
+    height: 300px;
+    font-family: "LuciferSansSemiCondencedBold";
+    font-size: 400px;
+    line-height: 110px;  
+    text-transform: uppercase;
+    color: #93845B;
+    top: 90px;
+    left: 320px;
+}
+
+.first-row-container__down-title-container {
+    position: absolute;
+    display: flex;
+    width: 1800px;
+    height: 300px;
+    font-family: "LuciferSansSemiCondencedBold";
+    font-size: 400px;
+    line-height: 110px;  
+    text-transform: uppercase;
+    color: #93845B;
+    bottom: -212px;
+    left: 162px;
+    z-index: 3;
+}
+
+.down-title-container__text-letter-e {
+    position: absolute;
+    transform: rotate(-28deg);
+    right: 150px;
+    bottom: 250px;
+}
+
+.down-title-container__text-letter-n {
+    position: absolute;
+    transform: rotate(-64deg);
+    right: -120px;
+    bottom: 500px;
+}
+
+.middle-image-container__paris-2019 {
+    position: absolute;
+    display: flex;
+    top: -19px;
+    left: 459px;
+}
+
+.paris-2019__word-paris {
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.paris-2019__year-2019 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #93845B;
+    margin-top: -20px;
+}
+
+/*transform: rotate(-90deg);
+ transform: rotate(-45deg);
+
+ font-size: 21px;
+    text-transform: uppercase;
+    color: #000000;
+*/
