@@ -110,9 +110,12 @@ a {
 .wrapper{
     max-width: 1870px;
     display: grid;
+    display: -ms-grid;
     margin: 0 auto;
     grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
     grid-template-rows: 110px 1466px 1198px 758px 1312px 910px 1070px 440px 1080px;
+    -ms-grid-rows: 110px 1466px 1198px 758px 1312px 910px 1070px 440px 1080px;
 }
 
 .header-container__menu-list {
@@ -149,14 +152,18 @@ a {
     margin-top: 35px;
 }
 
-.number1 {
+.wrapper-main-number1 {
     display: grid;
+    display: -ms-grid;
     grid-template-columns: 190px 1fr;
+    -ms-grid-columns: 190px 1fr;
 }
 
 .wrapper-main__nav {
     display: grid;
+    display: -ms-grid;
     grid-template-rows: 490px 490px 490px;
+    -ms-grid-rows: 490px 490px 490px;
 }
 
 .nav__nav-item {
@@ -351,6 +358,7 @@ a {
     z-index: 3;
 }
 
+
 .down-title-container__text-letter-e {
     position: absolute;
     transform: rotate(-28deg);
@@ -364,6 +372,34 @@ a {
     right: -120px;
     bottom: 500px;
 }
+
+._move-right {
+    -ms-transform: translateX(7000px) translateY(-6000px) rotate(-180deg);
+    -moz-transform: translateX(7000px) translateY(-6000px) rotate(-180deg);
+    -webkit-transform: translateX(7000px) translateY(-6000px) rotate(-180deg);
+    transform: translateX(7000px) translateY(-6000px) rotate(-180deg);
+    transition-duration: 3s;
+    transition-timing-function: ease;
+}
+
+._move-up {
+    -ms-transform: translateX(4000px) translateY(-6000px) rotate(180deg);
+    -moz-transform: translateX(4000px) translateY(-6000px) rotate(180deg);
+    -webkit-transform: translateX(4000px) translateY(-6000px) rotate(180deg);
+    transform: translateX(4000px) translateY(-6000px) rotate(180deg);
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+._move-left {
+    -ms-transform: translateX(-4000px);
+    -moz-transform: translateX(-4000px);
+    -webkit-transform: translateX(-4000px);
+    transform: translateX(-4000px);
+    transition-duration: 3s;
+    transition-timing-function: ease;
+}
+  
 
 .middle-image-container__paris-2019 {
     position: absolute;
@@ -385,10 +421,3 @@ a {
     margin-top: -20px;
 }
 
-/*transform: rotate(-90deg);
- transform: rotate(-45deg);
-
- font-size: 21px;
-    text-transform: uppercase;
-    color: #000000;
-*/
